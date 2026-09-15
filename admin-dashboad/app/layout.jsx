@@ -1,0 +1,1 @@
+import './globals.css';export const metadata={title:'FreshCart Admin',description:'FreshCart grocery administration dashboard'};export default function RootLayout({children}){return <html lang="en"><body>{children}</body></html>}

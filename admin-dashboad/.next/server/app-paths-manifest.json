@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/categories/page": "app/categories/page.js",
+  "/coupons/page": "app/coupons/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/login/page": "app/login/page.js",
+  "/orders/page": "app/orders/page.js",
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/products/page": "app/products/page.js",
+  "/riders/page": "app/riders/page.js",
+  "/slots/page": "app/slots/page.js"
+}

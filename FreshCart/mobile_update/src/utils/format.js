@@ -1,0 +1,7 @@
+export const money = (v, currency = "Rs.") =>
+  `${currency === "PKR" ? "PKR" : currency} ${Number(v || 0).toFixed(0)}`;
+export const sizeLabel = (s, u) =>
+  s < 1000
+    ? `${s} ${u === "liter" ? "ml" : "g"}`
+    : `${s / 1000} ${u === "liter" ? "L" : "kg"}`;
+export const sizes = [1000 ];

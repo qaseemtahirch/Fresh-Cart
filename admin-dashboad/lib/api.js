@@ -1,0 +1,2 @@
+const BASE=process.env.NEXT_PUBLIC_API_URL||'http://localhost:8080/api';
+export async function api(path,options={}){const token=typeof window!=='undefined'?localStorage.getItem('freshcart_token'):null;const res=await fetch(`${BASE}${path}`,{...options,headers:{'Content-Type':'application/json',...(token?{Authorization:`Bearer ${token}`}:{}) ,...(options.headers||{})},cache:'no-store'});let data=null;try{data=await res.json()}catch{}if(!res.ok)throw new Error(data?.error||data?.message||`Request failed (${res.status})`);return data}
