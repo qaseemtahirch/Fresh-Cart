@@ -1,0 +1,1 @@
+export {ProductDetailsScreen} from './AppScreens';
